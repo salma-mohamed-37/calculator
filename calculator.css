@@ -1,0 +1,48 @@
+.calculator
+{
+   margin-left: 35%;
+   margin-right: 38%;
+   margin-top: 2%;
+   padding: 11.5px;
+   border-radius: 25px;
+   
+}
+.button1 , .button2, .button3, .button4
+{
+    display: inline-block;
+    height: 75px;
+    border-radius: 20px;
+    font-size: x-large; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button1 {width:75px; text-align: center; background-color:rgb(240, 238, 238) ; color:black;}
+.button2 {width:157px; text-align: right; background-color:rgb(34, 48, 241) ; border : rgb(76, 85, 206) solid; color:black;}
+.button3 {width:75px; text-align: center; background-color:rgb(0, 0, 0) ; color:rgb(252, 252, 252); border :rgb(0, 0, 0) solid;}
+.button4 {width:157px; text-align: right; background-color:rgb(241, 151, 34) ; border:black solid; color:black; }
+.button1:hover , .button2:hover , .button3:hover, .button4:hover{ cursor: pointer;}
+.button1:hover {background-color: rgb(219, 219, 219);}
+.button2:hover{ background-color: rgb(34, 43, 165);}
+
+input
+{
+  height: 50px;
+  border : rgb(219, 219, 219) solid; 
+  border-width:2px;
+  background-color:rgb(240, 238, 238) ;
+  border-radius: 25px;
+  font-size: xx-large;
+  font-family:'Courier New', Courier, monospace;
+
+}
+
+.calculator, input,.button1 
+{
+  border :rgba(0, 0, 0, 0.233) solid; 
+  border-width:2px;
+}
+
+.l
+{
+    color:blueviolet;
+}
