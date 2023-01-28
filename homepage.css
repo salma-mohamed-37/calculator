@@ -2,7 +2,6 @@
 {
    text-align: center;
    font-size: xxx-large;
-   font-family:Brush Script MT, Brush Script Std, cursive;
    color :blue;
    margin-top: 15%;
    border: 3px dashed orange;
@@ -19,7 +18,6 @@
     width:250px;
     font-size: xxx-large;
     background-color: white;
-    font-family:Brush Script MT, Brush Script Std, cursive;
 }
 .button:hover
 {
