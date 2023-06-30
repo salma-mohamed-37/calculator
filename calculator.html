@@ -1,40 +1,43 @@
 <!DOCTYPE Html>
 <html>
     <head>
-        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="css/light theme.css">
+        <link rel="stylesheet" href="css/dark theme.css">
+        <link rel="stylesheet" href="css/media.css">
     </head>
-    <body >
-      <center>
+    <body>
+      <div class="themes">
         <input type="radio" value="light" name="theme" onclick="ltheme()" checked /><label for="light" class="l">Light Theme</label>
+       <br/>
         <input type="radio" value="dark" name="theme" onclick="dtheme()" /><label for="dark" class="l">Dark Theme</label>
-          <div class="calculator" id="div">
-            <input type="text" placeholder="0" size="17" readonly id="res" /> 
+      </div>
+          <div class="calculator">
+            <input type="text" placeholder="0" readonly id="res" class="textBox"/> 
             <br><br>
-              <label class="button1" id="clr" onclick="res.value =''">c</label> 
-              <label class="button1" id="del" onclick="res.value = res.value.substring(0,res.value.length-1)">del</label>
-              <label class="button1" id="per" onclick="res.value +='%'">%</label>
-              <label class="button1" id="div" onclick="res.value +='&#247;'">/</label>
+              <label class="button" id="clr" onclick="res.value =''">c</label> 
+              <label class="button" id="del" onclick="res.value = res.value.substring(0,res.value.length-1)">del</label>
+              <label class="button" id="per" onclick="res.value +='%'">%</label>
+              <label class="symbol" id="div" onclick="res.value +='&#247;'">/</label>
               
-              <label class="button1" id="sev" onclick="res.value +='7'">7</label>
-              <label class="button1" id="eig" onclick="res.value +='8'">8</label>
-              <label class="button1" id="nin" onclick="res.value +='9'">9</label>
-              <label class="button1" id="mul" onclick="res.value +='&#215;'">*</label>
+              <label class="button" id="sev" onclick="res.value +='7'">7</label>
+              <label class="button" id="eig" onclick="res.value +='8'">8</label>
+              <label class="button" id="nin" onclick="res.value +='9'">9</label>
+              <label class="symbol" id="mul" onclick="res.value +='&#215;'">*</label>
             
-              <label class="button1" id="fou" onclick="res.value +='4'">4</label>
-              <label class="button1" id="fiv" onclick="res.value +='5'">5</label>
-              <label class="button1" id="six" onclick="res.value +='6'">6</label>
-              <label class="button1" id="sub" onclick="res.value +='-'">-</label>
+              <label class="button" id="fou" onclick="res.value +='4'">4</label>
+              <label class="button" id="fiv" onclick="res.value +='5'">5</label>
+              <label class="button" id="six" onclick="res.value +='6'">6</label>
+              <label class="symbol" id="sub" onclick="res.value +='-'">-</label>
           
-              <label class="button1" id="one" onclick="res.value +='1'">1</label>
-              <label class="button1" id="two" onclick="res.value +='2'">2</label>
-              <label class="button1" id="thr" onclick="res.value +='3'">3</label>
-              <label class="button1" id="pls" onclick="res.value +='+'">+</label>
+              <label class="button" id="one" onclick="res.value +='1'">1</label>
+              <label class="button" id="two" onclick="res.value +='2'">2</label>
+              <label class="button" id="thr" onclick="res.value +='3'">3</label>
+              <label class="symbol" id="pls" onclick="res.value +='+'">+</label>
         
-              <label class="button1" id="zer" onclick="res.value +='0'">0</label>
-              <label class="button1" id="dot" onclick="res.value +='.'">.</label>
-              <label class="button2" id="eql" onclick="calc()" >= &nbsp;</label> 
+              <label class="button" id="zer" onclick="res.value +='0'">0</label>
+              <label class="button" id="dot" onclick="res.value +='.'">.</label>
+              <label class="equal" id="eql" onclick="calc()" >= &nbsp;</label> 
           </div>
-          </center> 
           <script src="calculator.js"></script>
     </body>
 </html>

@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px)
+{
+    .calculator
+    {
+        width:calc(100% - 50px);
+    }
+
+    .dcalculator
+    {
+        width:calc(100% - 50px);
+    }
+
+    .welcome
+    {
+        font-size:1cm;
+        margin-top: 40%;
+        margin-left: 1% ;
+    }
+
+    .move
+    {
+        border: 2px dashed orange;
+        margin-left: 15%;
+        font-size: 1cm;
+    }
+    .move:hover
+    {
+        border: 2px solid orange;
+    }
+}

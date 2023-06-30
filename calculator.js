@@ -20,18 +20,24 @@ function dtheme()
     let size = buttons.length;
     for (let i = 0; i < size ;i++)
     {
-        if(buttons[i].className=="button1")
+        if(buttons[i].className=="button")
         {
-            buttons[i].className= "button3";
+            buttons[i].className= "dbutton";
         }
-        else if (buttons[i].className=="button2") 
+        else if (buttons[i].className=="symbol") 
         {
-            buttons[i].className= "button4";
+            buttons[i].className= "dsymbol";
+        }
+        else if (buttons[i].className=="equal")
+        {
+            buttons[i].className="dequal";
         }
         
     }
     document.body.style.backgroundColor = 'black';
-    document.getElementById("div").style.backgroundColor ="white";
+    document.getElementsByClassName("themes")[0].className= "dthemes";
+    document.getElementsByClassName("calculator")[0].className= "dcalculator";
+    document.getElementsByClassName("textBox")[0].className= "dtextBox";   
 }
 
 function ltheme()
@@ -40,16 +46,24 @@ function ltheme()
     let size = buttons.length;
     for (let i = 0; i < size ;i++)
     {
-        if(buttons[i].className=="button3")
+        if(buttons[i].className=="dbutton")
         {
-            buttons[i].className= "button1";
+            buttons[i].className= "button";
         }
-        else if (buttons[i].className=="button4") 
+        else if (buttons[i].className=="dsymbol") 
         {
-            buttons[i].className= "button2";
+            buttons[i].className= "symbol";
+        }
+        else if (buttons[i].className=="dequal")
+        {
+            buttons[i].className="equal";
         }
         
     }
     document.body.style.backgroundColor = 'white';
-    document.getElementById("div").style.backgroundColor ="white";
+    document.getElementsByClassName("dthemes")[0].className= "themes";
+    document.getElementsByClassName("dcalculator")[0].className= "calculator";
+    document.getElementsByClassName("dtextBox")[0].className= "textBox";
+
+
 }

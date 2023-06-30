@@ -1,0 +1,25 @@
+.welcome
+{
+   text-align: center;
+   font-size: xxx-large;
+   color :blue;
+   margin-top: 15%;
+   border: 3px dashed orange;
+   width:fit-content;
+   margin-left: 25%;
+}
+
+.move
+{
+    color :blue;
+    border: 3px dashed orange;
+    margin-left: 35%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: xxx-large;
+    background-color: white;
+}
+.move:hover
+{
+    cursor: pointer;
+    border: 3px solid orange;
+}
