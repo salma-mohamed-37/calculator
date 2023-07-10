@@ -1,20 +1,16 @@
 @media only screen and (max-width: 1000px)
 {
-    .calculator
+    .calculator, .dcalculator
     {
-        width:calc(100% - 50px);
-    }
-
-    .dcalculator
-    {
-        width:calc(100% - 50px);
+        width:calc(100% - 200px);
+        height: calc(100% - 400px);
     }
 
     .welcome
     {
         font-size:1cm;
         margin-top: 40%;
-        margin-left: 1% ;
+        margin-left: 10% ;
     }
 
     .move
